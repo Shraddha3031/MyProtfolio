@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shraddha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">MyPortfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h1>Hello, I'm <span>Shraddha Ramnath Dusane.</span></h1>
+    <p>Learning Today, Building Tomorrow</p>
+    <p>Student Developer | Web Technologies, Linux & AI</p>
+    <button onclick="scrollToContact()">Hire Me</button>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Engineering student with a strong interest in
+        web development, Linux-based systems, and artificial intelligence.
+        I enjoy building practical projects that improve my technical
+        and problem-solving skills.
+    </p>
+    <p>
+        My goal is to continuously learn new technologies and use my
+        knowledge to develop real-world applications.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>💻 Linux AI Voice Assistant (Python)</h3>
+        <ul>
+            <li>Developed an AI voice assistant using Python in Linux environment</li>
+            <li>Uses speech recognition to accept voice commands</li>
+            <li>Provides voice responses using text-to-speech</li>
+            <li>Performs basic tasks and system-level operations</li>
+            <li>Improves human computer interaction through voice control</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h3>📚 Book Nest Management System (C)</h3>
+        <ul>
+            <li>Console-based book management system developed in C language</li>
+            <li>Allows adding, viewing, searching, and deleting book records</li>
+            <li>Uses file handling for permanent data storage</li>
+            <li>Menu-driven program for easy user interaction</li>
+            <li>Focuses on data structures and logic building</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h3>🌐 Personal Portfolio Website(HTML,CSS,and JavaScript) </h3>
+        <ul>
+            <li>Personal portfolio website to showcase projects and skills</li>
+            <li>Developed using HTML, CSS, and JavaScript</li>
+            <li>Includes project details, contact form, and GitHub link</li>
+            <li>Simple, clean, and responsive design</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+        I am open to learning opportunities, internships, and
+        collaborative projects.
+    </p>
+
+    <p><strong>Email:</strong> yourname@email.com</p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/your-username" target="_blank">
+            https://github.com/your-username
+        </a>
+    </p>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="error"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
